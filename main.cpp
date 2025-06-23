@@ -17,12 +17,12 @@ int main(int argc, char* argv[]) {
     int numProducers = config.producers.size();
 
     // Debug output for config
-    std::cout << "Parsed config: " << numProducers << " producers, co-editor queue size = "
-              << config.coEditorQueueSize << std::endl;
-    for (const auto& p : config.producers) {
-        std::cout << "Producer " << p.id << ": " << p.messageCount << " messages, queue size = "
-                  << p.queueSize << std::endl;
-    }
+    // std::cout << "Parsed config: " << numProducers << " producers, co-editor queue size = "
+    //           << config.coEditorQueueSize << std::endl;
+    // for (const auto& p : config.producers) {
+    //     std::cout << "Producer " << p.id << ": " << p.messageCount << " messages, queue size = "
+    //               << p.queueSize << std::endl;
+    // }
 
     // --- Create producer queues
     std::vector<BoundedBuffer*> producerQueues;

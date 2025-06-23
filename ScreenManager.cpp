@@ -11,9 +11,10 @@ void* screen_manager_thread(void* arg) {
 
         if (msg == "DONE") {
             doneCount++;
-        } else {
-            std::cout << msg << std::endl;
+            continue;
         }
+
+        std::cout << msg << std::endl;
     }
 
     std::cout << "DONE" << std::endl;
